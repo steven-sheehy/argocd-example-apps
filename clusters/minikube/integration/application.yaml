@@ -12,9 +12,7 @@ spec:
     path: helm-dependency
     targetRevision: HEAD
     helm:
-      values: |
-        wordpress:
-          replicaCount: 2
+      values: ""
   destination:
     server: https://kubernetes.default.svc
     namespace: integration
