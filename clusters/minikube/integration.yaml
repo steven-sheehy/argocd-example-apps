@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/steven-sheehy/argocd-example-apps.git
     path: helm-dependency
-    targetRevision: master
+    targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
     namespace: integration
