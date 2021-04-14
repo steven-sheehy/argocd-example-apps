@@ -11,13 +11,13 @@ spec:
     repoURL: https://github.com/steven-sheehy/argocd-example-apps.git
     path: helm-dependency
     targetRevision: HEAD
+    helm:
+      values: |
+        wordpress:
+          replicaCount: 2
   destination:
     server: https://kubernetes.default.svc
     namespace: integration
-  helm:
-    values: |
-      wordpress:
-        replicaCount: 2
   syncPolicy:
     automated:
       prune: true
