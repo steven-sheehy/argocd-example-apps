@@ -4,7 +4,7 @@ metadata:
   name: helm-dependency
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: wp=ssheehy/wordpress
+    argocd-image-updater.argoproj.io/image-list: wp=docker.io/ssheehy/wordpress
     argocd-image-updater.argoproj.io/wp.allow-tags: regexp:^master-.*
     argocd-image-updater.argoproj.io/wp.update-strategy: latest
   finalizers:
