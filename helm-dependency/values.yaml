@@ -1,6 +1,6 @@
 wordpress:
   image:
-    tag: 5.3.2-debian-10-r59
+    repository: ssheehy/wordpress
   wordpressPassword: foo
   mariadb:
     db:
