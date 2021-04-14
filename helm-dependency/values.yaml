@@ -1,4 +1,6 @@
 wordpress:
+  image:
+    tag: 5.3.1
   wordpressPassword: foo
   mariadb:
     db:
