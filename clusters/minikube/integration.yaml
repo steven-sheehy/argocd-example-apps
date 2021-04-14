@@ -14,6 +14,10 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: integration
+  helm:
+    values: |
+      wordpress:
+        replicaCount: 2
   syncPolicy:
     automated:
       prune: true
