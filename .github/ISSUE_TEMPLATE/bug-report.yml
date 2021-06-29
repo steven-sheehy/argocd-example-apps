@@ -1,0 +1,70 @@
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: bug
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for submitting a bug report!
+
+        Before submitting:
+        1. Try searching the existing issues and discussions to see if your issue has already been reported
+        2. Try asking on [Discord](https://discordapp.com/invite/FFb9YFX)
+        3. If you're reporting a security vulnerability, please disclose responsibly via our [bug bounty program](https://hedera.com/bounty)
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+    id: description
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+    id: actual
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    id: expected
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      description: Add any other context about the problem here. Attach any logs here, if applicable.
+      label: Additional context
+      placeholder: |
+        ```bash
+        some log output
+        ```
+        ![Screenshot of bug](bug.png)
+  - type: input
+    id: version
+    attributes:
+      description: The version of the software
+      label: Version
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: checkboxes
+    id: network
+    attributes:
+      description: The Hedera network
+      label: Select one or more Hedera networks where the issue occurred
+      options:
+        - label: mainnet
+        - label: testnet
+        - label: previewnet
+        - label: other
+    validations:
+      required: true
