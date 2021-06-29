@@ -8,7 +8,7 @@ body:
         ## Thanks for submitting a bug report!
 
         Before submitting:
-        1. Try searching the existing issues and discussions to see if your issue has already been reported
+        1. Try searching the existing [issues](issues) and [discussions](discussions) to see if your issue has already been reported
         2. Try asking on [Discord](https://discordapp.com/invite/FFb9YFX)
         3. If you're reporting a security vulnerability, please disclose responsibly via our [bug bounty program](https://hedera.com/bounty)
   - type: textarea
@@ -40,8 +40,8 @@ body:
   - type: dropdown
     id: network
     attributes:
-      description: Hedera network
-      label: Which network(s) did the issue occur on?
+      description: Which network(s) did the issue occur on?
+      label: Hedera network
       multiple: true
       options:
         - mainnet
