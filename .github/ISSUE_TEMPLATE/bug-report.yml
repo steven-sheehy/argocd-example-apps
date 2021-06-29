@@ -47,7 +47,7 @@ body:
       placeholder: v0.1.0
     validations:
       required: true
-  - type: checkbox
+  - type: checkboxex
     id: network
     attributes:
       description: Which network(s) did the issue occur on?
