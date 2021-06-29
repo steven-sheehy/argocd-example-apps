@@ -8,7 +8,7 @@ body:
         ## Thanks for submitting a bug report!
 
         Before submitting:
-        1. Try searching the existing [issues](issues) and [discussions](discussions) to see if your issue has already been reported
+        1. Try searching the existing [issues](/issues) and discussions to see if your issue has already been reported
         2. Try asking on [Discord](https://discordapp.com/invite/FFb9YFX)
         3. If you're reporting a security vulnerability, please disclose responsibly via our [bug bounty program](https://hedera.com/bounty)
   - type: textarea
@@ -25,10 +25,20 @@ body:
       description: Steps to reproduce the behavior
       placeholder: |
         1. Run the program
-        2. Click on '....'
-        3. Scroll down to '....'
+        2. Click on '...'
+        3. Scroll down to '...'
     validations:
       required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Attach any logs or screenshots relevent to the problem
+      placeholder: |
+        ```bash
+        2021-06-29T13:50:45.008-0600 INFO thread-1 Some logs
+        ```
+        ![Screenshot](bug.png)
   - type: input
     id: version
     attributes:
@@ -37,16 +47,25 @@ body:
       placeholder: v0.1.0
     validations:
       required: true
-  - type: dropdown
+  - type: checkbox
     id: network
     attributes:
       description: Which network(s) did the issue occur on?
       label: Hedera network
-      multiple: true
       options:
-        - mainnet
-        - testnet
-        - previewnet
-        - other
+        - label: mainnet
+        - label: testnet
+        - label: previewnet
+        - label: other
     validations:
       required: true
+  - type: dropdown
+    id: os
+    attributes:
+      description: Which OS did the issue occur on?
+      label: Operating system
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
