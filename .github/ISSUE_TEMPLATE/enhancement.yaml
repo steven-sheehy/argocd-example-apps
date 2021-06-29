@@ -1,0 +1,39 @@
+name: Minor enhancement
+description: Suggest an idea for this project
+labels: [ enhancement ]
+body:
+  - type: markdown
+    attributes:
+    value: |
+      ## Thanks for submitting a feature request!
+
+      Before submitting:
+      1. Try searching the existing issues and discussions to see if something similar has been discussed previously
+      2. Try opening a GitHub discussion first to gather feedback and reach consensus
+      3. If this is a major enhancement, please open a [Hedera Improvement Proposal](https://github.com/hashgraph/hedera-improvement-proposal)
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the problem you are trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: What solution do you propose to solve the problem?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: What alternative solutions have you considered?
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+      placeholder: |
+        ![Screenshot](mockup.png)
