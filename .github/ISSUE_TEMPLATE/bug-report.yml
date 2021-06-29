@@ -44,9 +44,9 @@ body:
       label: Which network(s) did the issue occur on?
       multiple: true
       options:
-        - label: mainnet
-        - label: testnet
-        - label: previewnet
-        - label: other
+        - mainnet
+        - testnet
+        - previewnet
+        - other
     validations:
       required: true
