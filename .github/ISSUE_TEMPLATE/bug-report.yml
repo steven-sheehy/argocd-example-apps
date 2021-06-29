@@ -8,7 +8,7 @@ body:
         ## Thanks for submitting a bug report!
 
         Before submitting:
-        1. Try searching the existing [issues](/issues) and discussions to see if your issue has already been reported
+        1. Try searching the existing [issues](/issues) and [discussions](/discussions) to see if your issue has already been reported
         2. Try asking on [Discord](https://discordapp.com/invite/FFb9YFX)
         3. If you're reporting a security vulnerability, please disclose responsibly via our [bug bounty program](https://hedera.com/bounty)
   - type: textarea
@@ -35,10 +35,10 @@ body:
       label: Additional context
       description: Attach any logs or screenshots relevent to the problem
       placeholder: |
+        ![Screenshot](bug.png)
         ```bash
         2021-06-29T13:50:45.008-0600 INFO thread-1 Some logs
         ```
-        ![Screenshot](bug.png)
   - type: input
     id: version
     attributes:
@@ -47,16 +47,17 @@ body:
       placeholder: v0.1.0
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: network
     attributes:
       description: Which network(s) did the issue occur on?
       label: Hedera network
+      multiple: true
       options:
-        - label: mainnet
-        - label: testnet
-        - label: previewnet
-        - label: other
+        - mainnet
+        - testnet
+        - previewnet
+        - other
     validations:
       required: true
   - type: dropdown
