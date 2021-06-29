@@ -16,6 +16,7 @@ body:
     attributes:
       label: Problem
       description: What is the problem you are trying to solve?
+      placeholder: I'm always frustrated when ...
     validations:
       required: true
   - type: textarea
@@ -26,6 +27,7 @@ body:
       placeholder: |
         - Add a config property
         - Change the schema
+        - ...
     validations:
       required: true
   - type: textarea
