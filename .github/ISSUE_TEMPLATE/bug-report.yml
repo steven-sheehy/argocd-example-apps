@@ -1,8 +1,6 @@
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: bug
-assignees: ''
+description: Create a report to help us improve
+labels: [ bug ]
 body:
   - type: markdown
     attributes:
@@ -14,21 +12,21 @@ body:
         2. Try asking on [Discord](https://discordapp.com/invite/FFb9YFX)
         3. If you're reporting a security vulnerability, please disclose responsibly via our [bug bounty program](https://hedera.com/bounty)
   - type: textarea
+    id: description
     attributes:
       label: Description
-      description: A clear and concise description of what the bug is.
-    id: description
+      description: What happened and what you did you expect to happen?
     validations:
       required: true
   - type: textarea
+    id: steps
     attributes:
-      label: Actual behavior
+      label: Steps to reproduce
       description: Steps to reproduce the behavior
       placeholder: |
-        1. Go to '...'
+        1. Run the program
         2. Click on '....'
         3. Scroll down to '....'
-    id: actual
     validations:
       required: true
   - type: textarea
@@ -51,7 +49,7 @@ body:
   - type: input
     id: version
     attributes:
-      description: The version of the software
+      description: What version of the software are you running?
       label: Version
       placeholder: v0.1.0
     validations:
@@ -59,8 +57,8 @@ body:
   - type: checkboxes
     id: network
     attributes:
-      description: The Hedera network
-      label: Select one or more Hedera networks where the issue occurred
+      description: Hedera network
+      label: Which network(s) did the issue occur on?
       options:
         - label: mainnet
         - label: testnet
