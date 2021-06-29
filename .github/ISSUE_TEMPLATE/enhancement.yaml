@@ -4,13 +4,13 @@ labels: [ enhancement ]
 body:
   - type: markdown
     attributes:
-    value: |
-      ## Thanks for submitting a feature request!
+      value: |
+        ## Thanks for submitting a feature request!
 
-      Before submitting:
-      1. Try searching the existing issues and discussions to see if something similar has been discussed previously
-      2. Try opening a GitHub discussion first to gather feedback and reach consensus
-      3. If this is a major enhancement, please open a [Hedera Improvement Proposal](https://github.com/hashgraph/hedera-improvement-proposal)
+        Before submitting:
+        1. Try searching the existing issues and discussions to see if something similar has been discussed previously
+        2. Try opening a GitHub discussion first to gather feedback and reach consensus
+        3. If this is a major enhancement, please open a [Hedera Improvement Proposal](https://github.com/hashgraph/hedera-improvement-proposal)
   - type: textarea
     id: problem
     attributes:
